@@ -30,6 +30,8 @@ public class ExternalController {
     public String eventTest() {
         events.publishEvent(new CompletedEvent("Got it."));
 
+        System.out.println("Doing something here.");
+
         return "Yo.";
     }
 
